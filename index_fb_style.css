@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  .container {
+    display: grid;
+    grid-template-rows: [row1-start] 50px [row1-end];
+    grid-template-columns: [col1-start] 25% [col2-start] 50% [col3-start] 25% [end];
+}
+
+.head_bar {
+    position: fixed;
+    border: 1px black;
+    grid-row: 1 ;
+    background-color: rgb(73, 72, 72);
+    width: 100%;
+}
+
+.logo_fb {
+    width: 44px;
+    padding-left: 10px;
+}
+
+.search{
+    position: absolute;
+    margin-left: 10px;
+    height: 48px;
+    width: auto;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+}
+
+    .search:placeholder-shown {
+        text-overflow: ellipsis;
+    }
+
+.left_bar{
+    padding-top: 10px;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: blue;
+}
+
+.fil_act{
+    padding-top: 10px;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: azure;
+}
+
+.right_bar{
+    padding-top: 10px;
+    grid-column: 3;
+    grid-row: 2;
+    background-color: brown;
+}
